@@ -8,7 +8,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
-import com.amonteiro.a10_ipi_android.presentation.screens.SearchScreenContent
+import com.amonteiro.a10_ipi_android.presentation.screens.SearchScreen
 import com.amonteiro.a10_ipi_android.ui.theme.A10_ipi_androidTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +21,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             A10_ipi_androidTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    SearchScreenContent(
+                    SearchScreen(
                         modifier = Modifier.padding(innerPadding)
                     )
                 }
